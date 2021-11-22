@@ -4,5 +4,5 @@ LABEL authors="Barry Digby" \
 
 WORKDIR ./
 COPY test.yml ./
-RUN conda env create -f test.yml && conda clean -a
+RUN conda env create -f environment.yml && conda clean -a
 ENV PATH /opt/conda/envs/test_env/bin:$PATH
