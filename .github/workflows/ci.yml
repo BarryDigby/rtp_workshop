@@ -23,7 +23,7 @@ test:
         nxf_ver: ['21.04.0', '']
     steps:
     - name: Check out pipeline code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.4.0
 
     - name: Check if Dockerfile or Conda environment changed
         uses: technote-space/get-diff-action@v4
