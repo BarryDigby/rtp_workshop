@@ -4,3 +4,5 @@ work/
 .nextflow.*
 .nextflow/
 dummy_files/
+fastqc/
+multiqc/
