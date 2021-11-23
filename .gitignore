@@ -1,2 +1,6 @@
 *.img
 test-datasets/
+work/
+.nextflow.*
+.nextflow/
+dummy_files/
