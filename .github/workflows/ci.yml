@@ -38,8 +38,8 @@ jobs:
       - name: Pull docker image
         if: ${{ !env.MATCHED_FILES }}
         run: |
-        docker pull barryd237/test:dev
-        docker tag barryd237/test:dev barryd237/test:dev
+          docker pull barryd237/test:dev
+          docker tag barryd237/test:dev barryd237/test:dev
     
       - name: Install Nextflow
         env:
