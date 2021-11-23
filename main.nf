@@ -4,6 +4,7 @@ Channel.fromFilePairs("${params.input}", checkIfExists: true)
        .into{ ch_qc_reads; ch_alignment_reads }
 
 ch_fasta = Channel.value(file(params.fasta))
+ch_gtf = Channel.value(file(params.gtf))
 
 process FASTQC{
     tag "${base}"
@@ -52,6 +53,7 @@ process TX{
 
     input:
     file(fasta) from ch_fasta
+    file(gtf) from ch_gtf
 
     output:
     file("${fasta.baseName}.tx.fa") into transcriptome_created
