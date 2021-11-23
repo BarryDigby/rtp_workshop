@@ -69,7 +69,7 @@ process INDEX{
         saveAs: { params.save_index ? "reference/index/${it}" : null }
 
     when:
-    !params.kallisto_index && params.
+    !params.kallisto_index
 
     input:
     file(tx) from ch_transcriptome
