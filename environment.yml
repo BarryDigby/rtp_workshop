@@ -1,4 +1,4 @@
-name: test_env_FULL
+name: test_env
 channels:
  - bioconda
 dependencies:
