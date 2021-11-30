@@ -6,3 +6,4 @@ dependencies:
  - multiqc
  - gffread
  - kallisto
+ - bedtools
