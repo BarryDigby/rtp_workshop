@@ -6,6 +6,10 @@ on:
     branches:
       - dev
 
+  pull_request:
+  release:
+    types: [published]
+
 jobs:
   push_dockerhub:
     name: Push new Docker image to Docker Hub (dev)
