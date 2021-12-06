@@ -7,3 +7,4 @@ dependencies:
  - gffread
  - kallisto
  - bedtools
+ - bedops
